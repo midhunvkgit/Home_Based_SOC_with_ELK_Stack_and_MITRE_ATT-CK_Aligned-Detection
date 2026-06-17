@@ -1,0 +1,18 @@
+#Summary of Work Done
+
+This project successfully designed, implemented, and evaluated a Home-Based Security Operations Center (SOC) for real-time threat detection,
+visualization, and MITRE ATT&CK correlation using the ELK Stack. The system was deployed in a controlled virtualized environment, comprising
+three virtual machines: a Kali Linux, a Windows 10 victim, and an Ubuntu Server hosting the ELK Stack. These machines were interconnected
+via a private network, ensuring isolated communication for controlled attack simulations and log collection.
+
+The ELK Stack, consisting of Elasticsearch, Logstash, and Kibana, was utilized to process, store, and visualize logs generated during 
+simulated attacks, which were executed using tools like Atomic Red Team and Metasploit. The system effectively detected a variety of attack
+techniques, including brute force attacks (using Hydra), credential dumping, and PowerShell-based activity, with real-time alerts generated
+for each event. Custom detection rules tailored to specific attack vectors proved effective, minimizing false positives.
+
+Performance analysis demonstrated the SOC's real-time monitoring capabilities, with alerts generated almost instantaneously. The system’s 
+granular logging and visualization in Kibana provided detailed insights, which are valuable for forensic analysis and incident
+response.
+
+The findings validate that a home-based SOC using open-source tools like the ELK Stack and attack simulation tools provides an effective, 
+cost-efficient solution for real-time threat detection, making it suitable for small organizations or educational environments.
