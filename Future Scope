@@ -1,0 +1,26 @@
+While this project demonstrated the effectiveness of the Home-Based SOC Environment in detecting a wide range of cyber threats, several 
+areas of improvement and future research could enhance its functionality and deployment in more complex environments.
+
+1. Integration with SIEM Solutions
+
+Future work could explore integrating the ELK Stack with other Security Information and Event Management (SIEM) systems for more advanced
+log management and correlation. Solutions such as Splunk or Security Onion could further streamline threat analysis, incident response,
+and the overall monitoring workflow.
+
+2. Automated Threat Response
+
+The integration of an Intrusion Prevention System (IPS) with the SOC could help provide automated mitigation of detected threats. By 
+connecting the SOC environment to firewalls or other security mechanisms, the system could prevent attacks in real time rather than merely
+detecting them.
+
+3. Deployment in Larger Environments
+
+Testing the home-based SOC in larger, production-level environments would provide insights into the system’s scalability and performance 
+under higher data volumes and more complex attack scenarios. This would also help assess its potential for use in enterprise settings.
+
+4. Expansion of Attack Scenarios
+
+Future work could expand the range of simulated attack scenarios, including more advanced threats such as zero-day exploits, polymorphic
+malware, and advanced persistent threats (APTs). This would help refine the detection rules and improve the SOC’s resilience against a
+broader spectrum of cyber threats. By addressing these areas of improvement, future research and development can enhance the capabilities 
+of home-based SOCs, making them more adaptable, scalable,and effective in real-world cybersecurity operations.
