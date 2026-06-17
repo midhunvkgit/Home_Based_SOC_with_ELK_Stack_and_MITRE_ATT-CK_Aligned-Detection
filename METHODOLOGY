@@ -1,0 +1,34 @@
+#Tools and Technologies
+The following software, hardware, and platforms were used to implement and evaluate the home-based Security Operations Center (SOC) for 
+real-time threat detection, log analysis, and MITRE ATT&CK correlation using the ELK Stack:
+
+#Software Stack:
+1. ELK Stack:
+• Elasticsearch: Used as the primary data storage and search engine for indexing and analyzing log data.
+• Logstash: Configured for ingesting, parsing, and transforming logs from various endpoints.
+• Kibana: Employed for data visualization, creating interactive dashboards, and monitoring security events in real-time.
+
+2. Beats Agents:
+• Filebeat: Deployed on Linux endpoints to collect and forward log data.
+• Winlogbeat: Configured on Windows machines to collect and forward event logs.
+• Auditbeat: Used for monitoring file integrity, user activity, and process execution on Linux systems.
+
+3. Adversary Simulation Tools:
+• Atomic Red Team: Utilized to simulate real-world attack techniques aligned with the MITRE ATT&CK framework.
+• Metasploit: Used to perform penetration testing and emulate adversary tactics in a controlled environment.
+
+#Virtualization Environment:
+1. Oracle VirtualBox: Virtualization platform used for setting up virtual machines (VMs) in a controlled environment.
+2. Guest Virtual Machines:
+• Kali Linux: Configured as the attacker machine, running penetration testing tools and facilitating attack simulations using Metasploit and other frameworks.
+• Ubuntu Server 24.04 LTS: Hosts the ELK Stack (Elasticsearch, Logstash,Kibana).
+• Windows 10: Configured as the victim machine for testing simulated attacks.
+
+#Hardware Specifications:
+• Host Machine: Dell P144G201
+• Processor: 11th Gen Intel Core i5-1135G7 @ 2.40GHz (4 cores)
+• Memory: 16GB DDR4
+• Storage: 250GB NVMe SSD
+
+These tools and technologies were essential for setting up the project environment, collecting endpoint telemetry, simulating attacks, 
+and analyzing the effectiveness of the SOC setup in detecting and responding to cybersecurity threats.
