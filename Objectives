@@ -1,0 +1,33 @@
+The primary objective of this project is to design and implement a home-based Security Operations Center (SOC) leveraging open-source 
+technologies to enable real-time threat detection, log analysis, and behavioral correlation. To support this goal, the project
+pursues the following specific objectives:
+
+1. Establish a Functional ELK Stack Environment: Install and configure Elasticsearch, Logstash, and Kibana on a virtualized Ubuntu server 
+to serve as the backbone for data ingestion, processing, storage, and visualization.
+
+2. Integrate Endpoint Telemetry Agents: Deploy Filebeat, Winlogbeat, and Auditbeat to collect system logs and security events from both 
+Linux and Windows endpoints, enhancing host activity visibility.
+
+3. Configure Log Ingestion and Parsing Pipelines: Set up Logstash pipelines to receive, parse, and enrich log data from Beats agents, 
+which is then indexed into Elasticsearch for fast querying and analysis.
+
+4. Simulate Adversary Techniques: Utilize tools such as Atomic Red Team andMetasploit to simulate real-world attack techniques, 
+validating detection capabilities and testing how well the system identifies these attack behaviors.
+
+5. Develop Custom Detection Rules: Based on the adversarial simulations, create and fine-tune custom detection rules within Kibana to 
+identify abnormal patterns and malicious activities in the collected data.
+
+6. Map Detected Activities to the MITRE ATT&CK Framework: Use the MITRE ATT&CK framework to correlate detected activities with known 
+adversary tactics, techniques, and procedures (TTPs), supporting a threat-informed defense strategy.
+
+7. Develop Custom Visualizations and Dashboards in Kibana: Create interactive dashboards and visualizations in Kibana to monitor security 
+events, analyze attack patterns, and support investigative workflows.
+
+8. Implement Real-Time Alerting Mechanisms: Configure Kibana Alerts to trigger notifications when predefined thresholds or threat 
+patterns are detected. Optionally, integrate ElastAlert to extend alerting capabilities.
+
+9. Ensure Scalability and Minimal Resource Utilization: Optimize the system for performance on limited hardware, ensuring that the SOC is
+suitable for deployment in home labs, educational environments, or small-scale operational setups. 
+
+By achieving these objectives, this project aims to demonstrate the practicality and effectiveness of a cost-efficient SOC model tailored 
+for hands-on cybersecurity education, technical skill development, and deployment in small-scale operational environments.
