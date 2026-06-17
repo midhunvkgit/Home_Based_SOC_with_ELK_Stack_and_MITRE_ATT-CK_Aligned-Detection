@@ -1,1 +1,7 @@
-Modern Security Operations Centers (SOCs) are vital for proactive cyber defense but remain largely inaccessible to students, researchers, and small organizations due to high costs, complex infrastructure, and operational demands. Traditional SOCs depend on enterprise-grade platforms, proprietary tools, and advanced integrations, limiting hands-on learning and experimentation. Additional barriers include fragmented open-source ecosystems, steep configuration requirements, and restricted access to real-world telemetry for effective detection and correlation. This project tackles these challenges by developing a lightweight, home-based SOC using the ELK Stack, Beats agents, and adversary emulation tools to enable real-time threat detection, MITRE ATT&CK-based behavioral mapping, and interactive visualization within a scalable, open-source framework.
+Modern Security Operations Centers (SOCs) are vital for proactive cyber defense but remain largely inaccessible to students, researchers, 
+and small organizations due to high costs, complex infrastructure, and operational demands. Traditional SOCs depend on enterprise-grade 
+platforms, proprietary tools, and advanced integrations, limiting hands-on learning and experimentation. Additional barriers include 
+fragmented open-source ecosystems, steep configuration requirements, and restricted access to real-world telemetry for effective detection 
+and correlation. This project tackles these challenges by developing a lightweight, home-based SOC using the ELK Stack, Beats agents, and 
+adversary emulation tools to enable real-time threat detection, MITRE ATT&CK-based behavioral mapping, and interactive visualization within 
+a scalable, open-source framework.
