@@ -1,0 +1,27 @@
+#System Design
+
+The Security Operations Center (SOC) in this project is built within a controlled virtualized environment comprising multiple virtual 
+machines (VMs): the Attacker (via Atomic Red Team and Metasploit), the Victim (Windows), and the SOC (Ubuntu Server with ELK Stack). 
+The system is designed to simulate real-world cyberattacks and evaluate the effectiveness of the ELK Stack in detecting, visualizing, and 
+responding to these attacks using the MITRE ATT&CK framework for correlation.
+
+#System Architecture Overview
+
+The system architecture consists of three core components, each serving a distinct role:
+
+1. Attacker (via Atomic Red Team and Metasploit): Attack simulations are carried out using Atomic Red Team and Metasploit, both of which 
+simulate various adversary tactics, techniques, and procedures (TTPs) aligned with the MITRE ATT&CK framework. These tools are executed 
+either from the Kali Linux VM or the SOC environment.
+2. Victim (Windows): Configured as the target machine, running Windows OS, which will be subjected to simulated attacks.
+3. SOC (Ubuntu Server with ELK Stack): Hosts the ELK Stack (Elasticsearch, Logstash, Kibana), which is responsible for collecting, 
+processing, and visualizing the logs generated during simulated attacks. This machine also correlates attack patterns with the MITRE 
+ATT&CK framework.
+
+These components are interconnected within a private network, ensuring controlled communication with static IP addresses assigned to each 
+machine. This isolated environment allows for comprehensive testing without external network interference.
+
+#Network Topology
+
+The network topology follows a centralized configuration, where the SOC machine (Ubuntu Server with ELK Stack) serves as the central monitoring and data collection
+point. The attack simulation tools (via Atomic Red Team and Metasploit) and the Windows 10 VM (victim) are interconnected within a private network, ensuring controlled 
+communication and log forwarding without external network interference.
